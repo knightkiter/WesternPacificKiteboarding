@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Michael Lanser
+    File Name: kiteboarder.html
+    Date: 07/01/2026
+-->
+<html lang="en">
+<head>
+    <title>Kiteboarder Video</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kiteboarder Video</h1>
+    </header>
+
+    <main>
+        <section class="video-section">
+            <h2>Video Project</h2>
+
+            <video controls>
+                <source src="media/VideoProject.mp4" type="video/mp4">
+                <p>Your browser does not support the video element.</p>
+            </video>
+
+            <p>
+                This page displays the exported MP4 video project.
+            </p>
+        </section>
+
+        <section class="mobile-list">
+            <h2>Kiteboarding Riders</h2>
+            <ul>
+                <li><strong>Cocoa Beach:</strong> Michael Lanser - Intermediate</li>
+                <li><strong>Key West:</strong> Jordan Smith - Advanced</li>
+                <li><strong>Daytona Beach:</strong> Taylor Brooks - Beginner</li>
+                <li><strong>Fort Lauderdale:</strong> Chris Morgan - Intermediate</li>
+                <li><strong>Tampa Bay:</strong> Alex Rivera - Advanced</li>
+            </ul>
+        </section>
+
+        <table class="desktop-table">
+            <caption>Kiteboarding Riders</caption>
+            <tr>
+                <th>Kiteboarding Location</th>
+                <th>Rider Name</th>
+                <th>Skill Level</th>
+            </tr>
+            <tr>
+                <td>Cocoa Beach</td>
+                <td>Michael Lanser</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Key West</td>
+                <td>Jordan Smith</td>
+                <td>Advanced</td>
+            </tr>
+            <tr>
+                <td>Daytona Beach</td>
+                <td>Taylor Brooks</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>Fort Lauderdale</td>
+                <td>Chris Morgan</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Tampa Bay</td>
+                <td>Alex Rivera</td>
+                <td>Advanced</td>
+            </tr>
+        </table>
+
+        <section class="form-section">
+            <h2>Kiteboarding Interest Form</h2>
+            <p>
+                Complete the form below if you would like more information about kiteboarding
+                locations and lessons.
+            </p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+
+                    <label for="fName">First Name:</label>
+                    <input type="text" id="fName" name="fName" required>
+
+                    <label for="lName">Last Name:</label>
+                    <input type="text" id="lName" name="lName" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Kiteboarding Preferences</legend>
+
+                    <label for="location">Preferred Location:</label>
+                    <select id="location" name="location">
+                        <option value="cocoa">Cocoa Beach</option>
+                        <option value="keywest">Key West</option>
+                        <option value="daytona">Daytona Beach</option>
+                        <option value="fortlauderdale">Fort Lauderdale</option>
+                        <option value="tampa">Tampa Bay</option>
+                    </select>
+
+                    <p>Skill Level:</p>
+                    <label><input type="radio" name="skill" value="beginner"> Beginner</label>
+                    <label><input type="radio" name="skill" value="intermediate"> Intermediate</label>
+                    <label><input type="radio" name="skill" value="advanced"> Advanced</label>
+
+                    <label for="comments">Questions or Comments:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit" class="submit-btn">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by: Michael Lanser</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+/*
+    Student Name: Michael Lanser
+    File Name: styles.css
+    Date: 07/01/2026
+*/
+
+/* CSS Reset */
+body, header, main, footer, section, h1, h2, p, ul, li, table, caption, tr, th, td, video, form, fieldset, legend, label, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Base body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f6fb;
+    color: #1f2f3d;
+}
+
+/* Header styles */
+header {
+    background-color: #0b5f7a;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+/* Main content styles */
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Video section styles */
+.video-section {
+    margin-bottom: 1.5em;
+}
+
+video {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Paragraph styles */
+p {
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+/* Mobile Viewport: Hide table and show mobile list */
+.desktop-table {
+    display: none;
+}
+
+/* Mobile Viewport: Alternate list display for table data */
+.mobile-list {
+    display: block;
+    margin-top: 1.5em;
+    padding: 1em;
+    background-color: #f2fbff;
+    border: 1px solid #0b5f7a;
+    border-radius: 8px;
+}
+
+.mobile-list h2 {
+    color: #0b5f7a;
+    margin-bottom: 0.5em;
+}
+
+.mobile-list ul {
+    padding-left: 1.2em;
+}
+
+.mobile-list li {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+/* Mobile Viewport: Alternating list item styles */
+.mobile-list li:nth-child(odd) {
+    background-color: #ffffff;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.mobile-list li:nth-child(even) {
+    background-color: #dff3fa;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+/* Base table styles for tablet and desktop */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5em;
+}
+
+caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #0b5f7a;
+}
+
+th, td {
+    border: 1px solid #0b5f7a;
+    padding: 0.75em;
+    text-align: left;
+}
+
+th {
+    background-color: #0b5f7a;
+    color: #ffffff;
+}
+
+/* Alternating table row styles */
+tr:nth-child(even) {
+    background-color: #f2fbff;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Form styles: Mobile viewport */
+.form-section {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f2fbff;
+    border: 1px solid #0b5f7a;
+    border-radius: 8px;
+}
+
+.form-section h2 {
+    color: #0b5f7a;
+    margin-bottom: 0.5em;
+}
+
+form {
+    margin-top: 1em;
+}
+
+fieldset {
+    border: 1px solid #0b5f7a;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+legend {
+    font-weight: bold;
+    color: #0b5f7a;
+    padding: 0 0.5em;
+}
+
+label {
+    display: block;
+    margin-top: 0.75em;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.6em;
+    margin-top: 0.25em;
+    border: 1px solid #0b5f7a;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.5em;
+}
+
+.submit-btn {
+    background-color: #0b5f7a;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1em;
+}
+
+.submit-btn:hover {
+    background-color: #08475c;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+}
+
+/* Tablet Viewport: Show table and refine form layout */
+@media screen and (min-width: 600px) {
+
+    .desktop-table {
+        display: table;
+    }
+
+    .mobile-list {
+        display: none;
+    }
+
+    table {
+        font-size: 0.95em;
+    }
+
+    th, td {
+        padding: 0.85em;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    fieldset {
+        margin-bottom: 0;
+    }
+
+    .submit-btn {
+        grid-column: 1 / span 2;
+        width: 50%;
+        margin: 1em auto 0;
+    }
+
+}
+
+/* Desktop Viewport: Refine table and form spacing */
+@media screen and (min-width: 900px) {
+
+    main {
+        padding: 2em;
+    }
+
+    table {
+        font-size: 1em;
+    }
+
+    th, td {
+        padding: 1em;
+    }
+
+    caption {
+        font-size: 1.5em;
+    }
+
+    .form-section {
+        padding: 1.5em;
+    }
+
+    form {
+        gap: 1.5em;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 1.05em;
+    }
+
+    .submit-btn {
+        width: 35%;
+    }
+
+}
