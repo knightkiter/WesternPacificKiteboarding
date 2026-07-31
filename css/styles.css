@@ -4,21 +4,32 @@
     Date: 07/01/2026
 */
 
-/* CSS Reset */
-body, header, main, footer, section, h1, h2, p, ul, li, table, caption, tr, th, td, video, form, fieldset, legend, label, input, select, textarea {
+/* ===========================
+   CSS Reset
+=========================== */
+
+body, header, main, footer, section, h1, h2, p, ul, li,
+table, caption, tr, th, td, video, form, fieldset,
+legend, label, input, select, textarea {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-/* Base body styles */
+/* ===========================
+   Body Styles
+=========================== */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #e9f6fb;
     color: #1f2f3d;
 }
 
-/* Header styles */
+/* ===========================
+   Header
+=========================== */
+
 header {
     background-color: #0b5f7a;
     color: #ffffff;
@@ -26,7 +37,10 @@ header {
     padding: 2em 1em;
 }
 
-/* Main content styles */
+/* ===========================
+   Main Content
+=========================== */
+
 main {
     max-width: 900px;
     margin: 2em auto;
@@ -36,7 +50,10 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Video section styles */
+/* ===========================
+   Video Section
+=========================== */
+
 .video-section {
     margin-bottom: 1.5em;
 }
@@ -47,18 +64,57 @@ video {
     border-radius: 8px;
 }
 
-/* Paragraph styles */
+/* ===========================
+   Contact Section
+=========================== */
+
+.contact-button {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.contact-button h2 {
+    color: #0b5f7a;
+    margin-bottom: 0.5em;
+}
+
+.contact-button p {
+    margin-bottom: 1em;
+}
+
+.email-btn {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.email-btn:hover {
+    background-color: #005fa3;
+}
+
+/* ===========================
+   Paragraphs
+=========================== */
+
 p {
     line-height: 1.5;
     margin-bottom: 1em;
 }
 
-/* Mobile Viewport: Hide table and show mobile list */
+/* ===========================
+   Mobile List
+=========================== */
+
 .desktop-table {
     display: none;
 }
 
-/* Mobile Viewport: Alternate list display for table data */
 .mobile-list {
     display: block;
     margin-top: 1.5em;
@@ -82,7 +138,6 @@ p {
     line-height: 1.5;
 }
 
-/* Mobile Viewport: Alternating list item styles */
 .mobile-list li:nth-child(odd) {
     background-color: #ffffff;
     padding: 0.5em;
@@ -95,7 +150,10 @@ p {
     border-radius: 5px;
 }
 
-/* Base table styles for tablet and desktop */
+/* ===========================
+   Table Styles
+=========================== */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -109,7 +167,8 @@ caption {
     color: #0b5f7a;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #0b5f7a;
     padding: 0.75em;
     text-align: left;
@@ -120,7 +179,6 @@ th {
     color: #ffffff;
 }
 
-/* Alternating table row styles */
 tr:nth-child(even) {
     background-color: #f2fbff;
 }
@@ -129,7 +187,10 @@ tr:nth-child(odd) {
     background-color: #ffffff;
 }
 
-/* Form styles: Mobile viewport */
+/* ===========================
+   Form Styles
+=========================== */
+
 .form-section {
     margin-top: 2em;
     padding: 1em;
@@ -199,14 +260,20 @@ input[type="radio"] {
     background-color: #08475c;
 }
 
-/* Footer styles */
+/* ===========================
+   Footer
+=========================== */
+
 footer {
     text-align: center;
     padding: 1em;
     font-size: 0.9em;
 }
 
-/* Tablet Viewport: Show table and refine form layout */
+/* ===========================
+   Tablet View
+=========================== */
+
 @media screen and (min-width: 600px) {
 
     .desktop-table {
@@ -221,7 +288,8 @@ footer {
         font-size: 0.95em;
     }
 
-    th, td {
+    th,
+    td {
         padding: 0.85em;
     }
 
@@ -240,10 +308,12 @@ footer {
         width: 50%;
         margin: 1em auto 0;
     }
-
 }
 
-/* Desktop Viewport: Refine table and form spacing */
+/* ===========================
+   Desktop View
+=========================== */
+
 @media screen and (min-width: 900px) {
 
     main {
@@ -254,7 +324,8 @@ footer {
         font-size: 1em;
     }
 
-    th, td {
+    th,
+    td {
         padding: 1em;
     }
 
@@ -279,5 +350,4 @@ footer {
     .submit-btn {
         width: 35%;
     }
-
 }
